@@ -1,0 +1,14 @@
+<app-goal 
+*ngFor="let goal of courseGoals" 
+[goal]="goal" 
+(click)="goal.isActiveGoal = !goal.isActiveGoal"
+[ngClass]="{active: goal.isActiveGoal}"
+>
+</app-goal>
+
+<div class="container">
+  <div class="col-xs-6 col-xs-offset-3">
+    <app-quote>
+    </app-quote>
+  </div>
+</div>
